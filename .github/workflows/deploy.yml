@@ -22,4 +22,5 @@ jobs:
             ls
             cd project-deploy
             git pull
+            pm2 restart all
            # pm2 restart dev
