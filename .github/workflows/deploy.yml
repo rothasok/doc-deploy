@@ -21,6 +21,8 @@ jobs:
             pwd
             ls
             cd project-deploy
-            git pull
+            git pull origin master
+            git submodule update --remote --merge
+            npm install
             pm2 restart all
            # pm2 restart dev

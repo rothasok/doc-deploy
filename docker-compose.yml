@@ -11,7 +11,7 @@ services:
       - mongodb
       - redis
     volumes:
-      - ./server/upload:/server/upload
+      # - ./server/upload:/server/upload
       - ./server/src:/server/src
       - .env.server:/server/.env
     # networks:
