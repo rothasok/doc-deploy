@@ -5,6 +5,6 @@ COPY client/package.json client/package-lock.json .env.client ./
 RUN npm install
 COPY client .
 RUN cp .env.client .env
-#RUN (cd client && npm install)
+# RUN (cd client && npm install)
 EXPOSE 4000
 CMD ["npm", "run", "dev"]
